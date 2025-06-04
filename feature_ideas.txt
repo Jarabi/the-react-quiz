@@ -1,0 +1,3 @@
+allow user to select the difficulty of questions - Done
+upload the high score to the fake api then fetch it when the quiz reloads
+store the answers in an array so the user could go back an forth in time to review the answers

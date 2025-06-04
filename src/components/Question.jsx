@@ -1,12 +1,18 @@
 import Options from "./Options";
 
 export default function Question({ question, dispatch, answer }) {
-    const {question: q, options} = question;
-    
+    const { question: q, options, category } = question;
+
     return (
         <div>
+            <span className='category'>{category}</span>
             <h4>{q}</h4>
-            <Options question={question} options={options} dispatch={dispatch} answer={answer} />
+            <Options
+                question={question}
+                options={options}
+                dispatch={dispatch}
+                answer={answer}
+            />
         </div>
-    )
+    );
 }

@@ -4,25 +4,29 @@
       "question": "Which is the most popular JavaScript framework?",
       "options": ["Angular", "React", "Svelte", "Vue"],
       "correctOption": 1,
-      "points": 10
+      "points": 10,
+      "category": "Fundamentals"
     },
     {
       "question": "Which company invented React?",
       "options": ["Google", "Apple", "Netflix", "Facebook"],
       "correctOption": 3,
-      "points": 10
+      "points": 10,
+      "category": "Fundamentals"
     },
     {
       "question": "What's the fundamental building block of React apps?",
       "options": ["Components", "Blocks", "Elements", "Effects"],
       "correctOption": 0,
-      "points": 10
+      "points": 10,
+      "category": "Components & Props"
     },
     {
       "question": "What's the name of the syntax we use to describe the UI in React components?",
       "options": ["FBJ", "Babel", "JSX", "ES2015"],
       "correctOption": 2,
-      "points": 10
+      "points": 10,
+      "category": "Components & Props"
     },
     {
       "question": "How does data flow naturally in React apps?",
@@ -33,13 +37,15 @@
         "The developers decides"
       ],
       "correctOption": 0,
-      "points": 10
+      "points": 20,
+      "category": "Components & Props"
     },
     {
       "question": "How to pass data into a child component?",
       "options": ["State", "Props", "PropTypes", "Parameters"],
       "correctOption": 1,
-      "points": 10
+      "points": 10,
+      "category": "Components & Props"
     },
     {
       "question": "When to use derived state?",
@@ -50,7 +56,8 @@
         "Whenever the state can be computed from another state variable"
       ],
       "correctOption": 3,
-      "points": 30
+      "points": 30,
+      "category": "State & Events"
     },
     {
       "question": "What triggers a UI re-render in React?",
@@ -61,7 +68,8 @@
         "Adding event listeners to DOM elements"
       ],
       "correctOption": 2,
-      "points": 20
+      "points": 20,
+      "category": "State & Events"
     },
     {
       "question": "When do we directly \"touch\" the DOM in React?",
@@ -72,7 +80,8 @@
         "Almost never"
       ],
       "correctOption": 3,
-      "points": 20
+      "points": 20,
+      "category": "State & Events"
     },
     {
       "question": "In what situation do we use a callback to update state?",
@@ -83,7 +92,8 @@
         "When the new state depends on the previous state"
       ],
       "correctOption": 3,
-      "points": 30
+      "points": 30,
+      "category": "State & Events"
     },
     {
       "question": "If we pass a function to useState, when will that function be called?",
@@ -94,13 +104,15 @@
         "The first time we update the state"
       ],
       "correctOption": 2,
-      "points": 30
+      "points": 30,
+      "category": "State & Events"
     },
     {
       "question": "Which hook to use for an API request on the component's initial render?",
       "options": ["useState", "useEffect", "useRef", "useReducer"],
       "correctOption": 1,
-      "points": 10
+      "points": 20,
+      "category": "Effects & Lifecycle"
     },
     {
       "question": "Which variables should go into the useEffect dependency array?",
@@ -111,7 +123,8 @@
         "All variables needed for clean up"
       ],
       "correctOption": 2,
-      "points": 30
+      "points": 30,
+      "category": "Effects & Lifecycle"
     },
     {
       "question": "An effect will always run on the initial render.",
@@ -122,7 +135,8 @@
         "In depends on the code in the effect"
       ],
       "correctOption": 0,
-      "points": 30
+      "points": 30,
+      "category": "Effects & Lifecycle"
     },
     {
       "question": "When will an effect run if it doesn't have a dependency array?",
@@ -133,7 +147,68 @@
         "Each time the component is re-rendered"
       ],
       "correctOption": 3,
-      "points": 20
+      "points": 20,
+      "category": "Effects & Lifecycle"
+    },
+    {
+      "question": "What is React.memo used for?",
+      "options": [
+        "To memorize variable values between renders",
+        "To prevent unnecessary re-renders of functional components",
+        "To remember the previous state value",
+        "To cache API responses"
+      ],
+      "correctOption": 1,
+      "points": 30,
+      "category": "Performance & Advanced"
+    },
+    {
+      "question": "When should you use useMemo?",
+      "options": [
+        "For all expensive calculations",
+        "When you want to optimize component rendering",
+        "When you need to memoize a value based on dependencies",
+        "Only when you're experiencing performance issues"
+      ],
+      "correctOption": 2,
+      "points": 30,
+      "category": "Performance & Advanced"
+    },
+    {
+      "question": "What problem does the Context API solve?",
+      "options": [
+        "State persistence across page reloads",
+        "Form validation",
+        "Props drilling through many component layers",
+        "Server-side rendering"
+      ],
+      "correctOption": 2,
+      "points": 20,
+      "category": "State Management"
+    },
+    {
+      "question": "What is the main benefit of custom hooks?",
+      "options": [
+        "They run faster than built-in hooks",
+        "They allow for reusing stateful logic across components",
+        "They can access component instances directly",
+        "They bypass React's rendering cycle"
+      ],
+      "correctOption": 1,
+      "points": 30,
+      "category": "Advanced Hooks"
+    },
+    {
+      "question": "What is the Virtual DOM in React?",
+      "options": [
+        "A complete copy of the real DOM in memory",
+        "A lightweight JavaScript representation of the real DOM",
+        "A special browser API used by React",
+        "A method to directly manipulate DOM nodes"
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "category": "Performance & Advanced"
     }
   ]
 }
