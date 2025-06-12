@@ -169,17 +169,36 @@ function reducer(state, action) {
         }
 
         case 'finish': {
+            const newHighScore =
+                state.points > state.highScore ? state.points : state.highScore;
+
+            // Update high score in API
+            fetch('http://localhost:8000/highScore', {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ highScore: newHighScore }),
+            }).catch((error) =>
+                console.error('Error updating high score in API:', error)
+            );
+
             return {
                 ...state,
                 status: 'finished',
-                highScore:
-                    state.points > state.highScore
-                        ? state.points
-                        : state.highScore,
+                highScore: newHighScore,
             };
         }
 
         case 'restart': {
+            // Fetch the latest high score from API during restart
+            fetch('http://localhost:8000/highScore')
+                .then((response) => response.json())
+                .then((data) => (state.highScore = data.highScore))
+                .catch((error) =>
+                    console.error('Error fetching high score from API:', error)
+                );
+
             return {
                 ...initialState,
                 allQuestions: state.allQuestions,

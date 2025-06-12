@@ -2,28 +2,48 @@
   "questions": [
     {
       "question": "Which is the most popular JavaScript framework?",
-      "options": ["Angular", "React", "Svelte", "Vue"],
+      "options": [
+        "Angular",
+        "React",
+        "Svelte",
+        "Vue"
+      ],
       "correctOption": 1,
       "points": 10,
       "category": "Fundamentals"
     },
     {
       "question": "Which company invented React?",
-      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "options": [
+        "Google",
+        "Apple",
+        "Netflix",
+        "Facebook"
+      ],
       "correctOption": 3,
       "points": 10,
       "category": "Fundamentals"
     },
     {
       "question": "What's the fundamental building block of React apps?",
-      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "options": [
+        "Components",
+        "Blocks",
+        "Elements",
+        "Effects"
+      ],
       "correctOption": 0,
       "points": 10,
       "category": "Components & Props"
     },
     {
       "question": "What's the name of the syntax we use to describe the UI in React components?",
-      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "options": [
+        "FBJ",
+        "Babel",
+        "JSX",
+        "ES2015"
+      ],
       "correctOption": 2,
       "points": 10,
       "category": "Components & Props"
@@ -42,7 +62,12 @@
     },
     {
       "question": "How to pass data into a child component?",
-      "options": ["State", "Props", "PropTypes", "Parameters"],
+      "options": [
+        "State",
+        "Props",
+        "PropTypes",
+        "Parameters"
+      ],
       "correctOption": 1,
       "points": 10,
       "category": "Components & Props"
@@ -109,7 +134,12 @@
     },
     {
       "question": "Which hook to use for an API request on the component's initial render?",
-      "options": ["useState", "useEffect", "useRef", "useReducer"],
+      "options": [
+        "useState",
+        "useEffect",
+        "useRef",
+        "useReducer"
+      ],
       "correctOption": 1,
       "points": 20,
       "category": "Effects & Lifecycle"
@@ -210,5 +240,30 @@
       "points": 20,
       "category": "Performance & Advanced"
     }
-  ]
+  ],
+  "highScore": {
+    "item": {
+      "item": {
+        "item": {
+          "item": {
+            "item": {
+              "item": {
+                "item": {
+                  "item": 0,
+                  "highScore": 10
+                },
+                "highScore": 10
+              },
+              "highScore": 10
+            },
+            "highScore": 10
+          },
+          "highScore": 50
+        },
+        "highScore": 50
+      },
+      "highScore": 100
+    },
+    "highScore": 100
+  }
 }
