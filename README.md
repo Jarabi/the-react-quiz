@@ -1,11 +1,11 @@
 # React Quiz App
 
-An interactive quiz application built with React and Vite that tests your knowledge of React fundamentals. The app features 15 carefully crafted questions about React concepts, state management, hooks, and best practices.
+An interactive quiz application built with React and Vite that tests your knowledge of React fundamentals. The app features carefully crafted questions about React concepts, state management, hooks, and best practices.
 
 ## Features
 
 - Interactive quiz interface
-- 15 questions covering React fundamentals
+- Questions covering React fundamentals
 - Point-based scoring system
 - Questions served from a local JSON server
 - Built with React and Vite for optimal performance
