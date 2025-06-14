@@ -5,7 +5,7 @@ import Loader from './Loader';
 import Error from './Error'
 import StartScreen from './StartScreen';
 import Question from './Question';
-import NextButton from './NextButton';
+import Button from './Button';
 import Progress from './Progress';
 import FinishScreen from './FinishScreen';
 import Footer from './Footer';
@@ -21,6 +21,7 @@ export default function App() {
             status,
             index,
             answer,
+            answers,
             points,
             highScore,
             secondsRemaining,
@@ -74,12 +75,24 @@ export default function App() {
                                 secondsRemaining={secondsRemaining}
                                 dispatch={dispatch}
                             />
-                            <NextButton
-                                dispatch={dispatch}
-                                answer={answer}
-                                index={index}
-                                numQuestions={numQuestions}
-                            />
+                            {index < numQuestions - 1 && (
+                                <Button
+                                    dispatch={dispatch}
+                                    dispatchType='nextQuestion'
+                                    answer={answer}
+                                >
+                                    Next
+                                </Button>
+                            )}
+                            {index === numQuestions - 1 && (
+                                <Button
+                                    dispatch={dispatch}
+                                    dispatchType='finish'
+                                    answer={answer}
+                                >
+                                    Finish
+                                </Button>
+                            )}
                         </Footer>
                     </>
                 )}
@@ -91,6 +104,56 @@ export default function App() {
                         dispatch={dispatch}
                     />
                 )}
+                {status === 'review' && (
+                    <>
+                        <Progress
+                            index={index}
+                            numQuestions={numQuestions}
+                            points={points}
+                            totalPoints={totalPoints}
+                            answer={answer}
+                        />
+                        <p className='highscore'>
+                            Score: {points} / {totalPoints} (
+                            {Math.ceil((points / totalPoints) * 100)}%){' '}
+                            <span className='badge accent'>
+                                Highscore: {highScore} points
+                            </span>
+                        </p>
+                        <Question
+                            question={questions[index]}
+                            dispatch={dispatch}
+                            answer={answers[index]}
+                        />
+                        <Footer>
+                            <div className='review-btns'>
+                                <div className='review-nav'>
+                                    <Button
+                                        dispatch={dispatch}
+                                        dispatchType='reviewPrev'
+                                        disabled={index === 0}
+                                    >
+                                        Previous
+                                    </Button>
+
+                                    <Button
+                                        dispatch={dispatch}
+                                        dispatchType='reviewNext'
+                                        disabled={index === numQuestions - 1}
+                                    >
+                                        Next
+                                    </Button>
+                                </div>
+                                <Button
+                                    dispatch={dispatch}
+                                    dispatchType='restart'
+                                >
+                                    Restart Quiz
+                                </Button>
+                            </div>
+                        </Footer>
+                    </>
+                )}
             </Main>
         </div>
     );
@@ -99,9 +162,10 @@ export default function App() {
 const initialState = {
     allQuestions: [],
     questions: [],
-    status: 'loading', // 'loading', 'error', 'ready', 'active', 'finished'
+    status: 'loading', // 'loading', 'error', 'ready', 'active', 'finished', 'review'
     index: 0,
     answer: null,
+    answers: [], // Srores all user answers
     points: 0,
     highScore: 0,
     secondsRemaining: null,
@@ -154,9 +218,14 @@ function reducer(state, action) {
         }
 
         case 'newAnswer': {
+            // Create new answer array with the current answer
+            const newAnswers = [...state.answers];
+            newAnswers[state.index] = action.payload;
+
             return {
                 ...state,
                 answer: action.payload,
+                answers: newAnswers,
                 points:
                     action.payload === question.correctOption
                         ? state.points + question.points
@@ -169,8 +238,8 @@ function reducer(state, action) {
         }
 
         case 'finish': {
-            const newHighScore =
-                state.points > state.highScore ? state.points : state.highScore;
+            // const newHighScore = state.points > state.highScore ? state.points : state.highScore;
+            const newHighScore = Math.max(state.points, state.highScore);
 
             // Update high score in API
             fetch('http://localhost:8000/highScore', {
@@ -187,6 +256,29 @@ function reducer(state, action) {
                 ...state,
                 status: 'finished',
                 highScore: newHighScore,
+            };
+        }
+
+        case 'review': {
+            // Review answered questions
+            return {
+                ...state,
+                status: 'review',
+                index: 0, // Start from the first question
+            };
+        }
+
+        case 'reviewNext': {
+            return {
+                ...state,
+                index: state.index + 1,
+            };
+        }
+
+        case 'reviewPrev': {
+            return {
+                ...state,
+                index: state.index - 1,
             };
         }
 

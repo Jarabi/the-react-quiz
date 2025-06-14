@@ -5,7 +5,7 @@ export default function Question({ question, dispatch, answer }) {
 
     return (
         <div>
-            <span className='category'>{category}</span>
+            <span className='badge'>{category}</span>
             <h4>{q}</h4>
             <Options
                 question={question}
