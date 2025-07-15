@@ -4,11 +4,15 @@ An interactive quiz application built with React and Vite that tests your knowle
 
 ## Features
 
-- Interactive quiz interface
-- Questions covering React fundamentals
-- Point-based scoring system
-- Questions served from a local JSON server
-- Built with React and Vite for optimal performance
+- **Interactive Quiz Interface** - Clean, responsive UI for taking quizzes
+- **Question Categories** - Filter questions by topics like "Fundamentals", "Components & Props", "State & Events", "Effects & Lifecycle", "Performance & Advanced", "State Management", and "Advanced Hooks"
+- **Answer Review System** - Review all your answers after completing the quiz with navigation between questions
+- **Persistent High Score** - High scores are saved to and retrieved from the JSON server API
+- **Timed Questions** - 30 seconds per question with automatic quiz completion on timeout
+- **Point-based Scoring** - Different questions carry different point values
+- **Context API State Management** - Centralized state management using React Context to avoid prop drilling
+- **Questions served from JSON Server** - Local API for quiz data and high score persistence
+- **Built with React 19 and Vite** - Modern tooling for optimal performance
 
 ## Getting Started
 
@@ -42,10 +46,7 @@ The application will be available at `http://localhost:5173` (or another port if
 ## Development Scripts
 
 - `npm run dev` - Start the development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
 - `npm run server` - Start the JSON server (quiz data)
-- `npm run lint` - Run ESLint
 
 ## Tech Stack
 
