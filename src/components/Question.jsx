@@ -1,18 +1,15 @@
-import Options from "./Options";
+import { useQuiz } from '../contexts/QuizContext';
+import Options from './Options';
 
-export default function Question({ question, dispatch, answer }) {
-    const { question: q, options, category } = question;
+export default function Question() {
+    const { questions, index } = useQuiz();
+    const question = questions.at(index);
 
     return (
         <div>
-            <span className='badge'>{category}</span>
-            <h4>{q}</h4>
-            <Options
-                question={question}
-                options={options}
-                dispatch={dispatch}
-                answer={answer}
-            />
+            <span className='badge'>{question.category}</span>
+            <h4>{question.question}</h4>
+            <Options question={question} />
         </div>
     );
 }

@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { useQuiz } from '../contexts/QuizContext';
 
-export default function StartScreen({ numQuestions, dispatch, categories }) {
+export default function StartScreen() {
+    const { numQuestions, dispatch, categories } = useQuiz();
     const [selectedCategory, setSelectedCategory] = useState('All');
 
     return (

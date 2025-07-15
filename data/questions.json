@@ -10,7 +10,8 @@
       ],
       "correctOption": 1,
       "points": 10,
-      "category": "Fundamentals"
+      "category": "Fundamentals",
+      "id": "4370"
     },
     {
       "question": "Which company invented React?",
@@ -22,7 +23,8 @@
       ],
       "correctOption": 3,
       "points": 10,
-      "category": "Fundamentals"
+      "category": "Fundamentals",
+      "id": "d4e8"
     },
     {
       "question": "What's the fundamental building block of React apps?",
@@ -34,7 +36,8 @@
       ],
       "correctOption": 0,
       "points": 10,
-      "category": "Components & Props"
+      "category": "Components & Props",
+      "id": "ada6"
     },
     {
       "question": "What's the name of the syntax we use to describe the UI in React components?",
@@ -46,7 +49,8 @@
       ],
       "correctOption": 2,
       "points": 10,
-      "category": "Components & Props"
+      "category": "Components & Props",
+      "id": "fc39"
     },
     {
       "question": "How does data flow naturally in React apps?",
@@ -58,7 +62,8 @@
       ],
       "correctOption": 0,
       "points": 20,
-      "category": "Components & Props"
+      "category": "Components & Props",
+      "id": "d19c"
     },
     {
       "question": "How to pass data into a child component?",
@@ -70,7 +75,8 @@
       ],
       "correctOption": 1,
       "points": 10,
-      "category": "Components & Props"
+      "category": "Components & Props",
+      "id": "17dc"
     },
     {
       "question": "When to use derived state?",
@@ -82,7 +88,8 @@
       ],
       "correctOption": 3,
       "points": 30,
-      "category": "State & Events"
+      "category": "State & Events",
+      "id": "8e67"
     },
     {
       "question": "What triggers a UI re-render in React?",
@@ -94,7 +101,8 @@
       ],
       "correctOption": 2,
       "points": 20,
-      "category": "State & Events"
+      "category": "State & Events",
+      "id": "fc78"
     },
     {
       "question": "When do we directly \"touch\" the DOM in React?",
@@ -106,7 +114,8 @@
       ],
       "correctOption": 3,
       "points": 20,
-      "category": "State & Events"
+      "category": "State & Events",
+      "id": "3e6d"
     },
     {
       "question": "In what situation do we use a callback to update state?",
@@ -118,7 +127,8 @@
       ],
       "correctOption": 3,
       "points": 30,
-      "category": "State & Events"
+      "category": "State & Events",
+      "id": "6fa2"
     },
     {
       "question": "If we pass a function to useState, when will that function be called?",
@@ -130,7 +140,8 @@
       ],
       "correctOption": 2,
       "points": 30,
-      "category": "State & Events"
+      "category": "State & Events",
+      "id": "534c"
     },
     {
       "question": "Which hook to use for an API request on the component's initial render?",
@@ -142,7 +153,8 @@
       ],
       "correctOption": 1,
       "points": 20,
-      "category": "Effects & Lifecycle"
+      "category": "Effects & Lifecycle",
+      "id": "464a"
     },
     {
       "question": "Which variables should go into the useEffect dependency array?",
@@ -154,7 +166,8 @@
       ],
       "correctOption": 2,
       "points": 30,
-      "category": "Effects & Lifecycle"
+      "category": "Effects & Lifecycle",
+      "id": "fdf6"
     },
     {
       "question": "An effect will always run on the initial render.",
@@ -166,7 +179,8 @@
       ],
       "correctOption": 0,
       "points": 30,
-      "category": "Effects & Lifecycle"
+      "category": "Effects & Lifecycle",
+      "id": "1ea6"
     },
     {
       "question": "When will an effect run if it doesn't have a dependency array?",
@@ -178,7 +192,8 @@
       ],
       "correctOption": 3,
       "points": 20,
-      "category": "Effects & Lifecycle"
+      "category": "Effects & Lifecycle",
+      "id": "2f24"
     },
     {
       "question": "What is React.memo used for?",
@@ -190,7 +205,8 @@
       ],
       "correctOption": 1,
       "points": 30,
-      "category": "Performance & Advanced"
+      "category": "Performance & Advanced",
+      "id": "96b1"
     },
     {
       "question": "When should you use useMemo?",
@@ -202,7 +218,8 @@
       ],
       "correctOption": 2,
       "points": 30,
-      "category": "Performance & Advanced"
+      "category": "Performance & Advanced",
+      "id": "3ba4"
     },
     {
       "question": "What problem does the Context API solve?",
@@ -214,7 +231,8 @@
       ],
       "correctOption": 2,
       "points": 20,
-      "category": "State Management"
+      "category": "State Management",
+      "id": "8e77"
     },
     {
       "question": "What is the main benefit of custom hooks?",
@@ -226,7 +244,8 @@
       ],
       "correctOption": 1,
       "points": 30,
-      "category": "Advanced Hooks"
+      "category": "Advanced Hooks",
+      "id": "0793"
     },
     {
       "question": "What is the Virtual DOM in React?",
@@ -238,7 +257,8 @@
       ],
       "correctOption": 1,
       "points": 20,
-      "category": "Performance & Advanced"
+      "category": "Performance & Advanced",
+      "id": "f652"
     }
   ],
   "highScore": {
@@ -289,46 +309,85 @@
                                                                                             "item": {
                                                                                               "item": {
                                                                                                 "item": {
-                                                                                                  "item": 0,
-                                                                                                  "highScore": 10
+                                                                                                  "item": {
+                                                                                                    "item": {
+                                                                                                      "item": {
+                                                                                                        "item": {
+                                                                                                          "item": {
+                                                                                                            "item": {
+                                                                                                              "item": {
+                                                                                                                "item": {
+                                                                                                                  "item": {
+                                                                                                                    "item": {
+                                                                                                                      "item": {
+                                                                                                                        "item": {
+                                                                                                                          "item": {
+                                                                                                                            "item": 0,
+                                                                                                                            "highScore": 10
+                                                                                                                          },
+                                                                                                                          "highScore": 10
+                                                                                                                        },
+                                                                                                                        "highScore": 10
+                                                                                                                      },
+                                                                                                                      "highScore": 10
+                                                                                                                    },
+                                                                                                                    "highScore": 50
+                                                                                                                  },
+                                                                                                                  "highScore": 50
+                                                                                                                },
+                                                                                                                "highScore": 100
+                                                                                                              },
+                                                                                                              "highScore": 100
+                                                                                                            },
+                                                                                                            "highScore": 130
+                                                                                                          },
+                                                                                                          "highScore": 130
+                                                                                                        },
+                                                                                                        "highScore": 130
+                                                                                                      },
+                                                                                                      "highScore": 130
+                                                                                                    },
+                                                                                                    "highScore": 100
+                                                                                                  },
+                                                                                                  "highScore": 100
                                                                                                 },
-                                                                                                "highScore": 10
+                                                                                                "highScore": 70
                                                                                               },
-                                                                                              "highScore": 10
+                                                                                              "highScore": 70
                                                                                             },
-                                                                                            "highScore": 10
+                                                                                            "highScore": 70
                                                                                           },
-                                                                                          "highScore": 50
+                                                                                          "highScore": 70
                                                                                         },
-                                                                                        "highScore": 50
+                                                                                        "highScore": 130
                                                                                       },
-                                                                                      "highScore": 100
+                                                                                      "highScore": 130
                                                                                     },
-                                                                                    "highScore": 100
+                                                                                    "highScore": 20
                                                                                   },
-                                                                                  "highScore": 130
+                                                                                  "highScore": 20
                                                                                 },
-                                                                                "highScore": 130
+                                                                                "highScore": 20
                                                                               },
-                                                                              "highScore": 130
+                                                                              "highScore": 20
                                                                             },
-                                                                            "highScore": 130
+                                                                            "highScore": 20
                                                                           },
-                                                                          "highScore": 100
+                                                                          "highScore": 20
                                                                         },
-                                                                        "highScore": 100
+                                                                        "highScore": 50
                                                                       },
-                                                                      "highScore": 70
+                                                                      "highScore": 50
                                                                     },
-                                                                    "highScore": 70
+                                                                    "highScore": 50
                                                                   },
-                                                                  "highScore": 70
+                                                                  "highScore": 50
                                                                 },
-                                                                "highScore": 70
+                                                                "highScore": 20
                                                               },
-                                                              "highScore": 130
+                                                              "highScore": 20
                                                             },
-                                                            "highScore": 130
+                                                            "highScore": 20
                                                           },
                                                           "highScore": 20
                                                         },
@@ -340,7 +399,7 @@
                                                   },
                                                   "highScore": 20
                                                 },
-                                                "highScore": 20
+                                                "highScore": 50
                                               },
                                               "highScore": 50
                                             },
@@ -348,17 +407,17 @@
                                           },
                                           "highScore": 50
                                         },
-                                        "highScore": 50
+                                        "highScore": 110
                                       },
-                                      "highScore": 20
+                                      "highScore": 110
                                     },
-                                    "highScore": 20
+                                    "highScore": 40
                                   },
-                                  "highScore": 20
+                                  "highScore": 40
                                 },
-                                "highScore": 20
+                                "highScore": 170
                               },
-                              "highScore": 20
+                              "highScore": 170
                             },
                             "highScore": 20
                           },
@@ -366,24 +425,24 @@
                         },
                         "highScore": 20
                       },
-                      "highScore": 50
+                      "highScore": 20
                     },
-                    "highScore": 50
+                    "highScore": 20
                   },
-                  "highScore": 50
+                  "highScore": 20
                 },
-                "highScore": 50
+                "highScore": 20
               },
-              "highScore": 110
+              "highScore": 20
             },
-            "highScore": 110
+            "highScore": 100
           },
-          "highScore": 40
+          "highScore": 20
         },
-        "highScore": 40
+        "highScore": 20
       },
-      "highScore": 170
+      "highScore": 40
     },
-    "highScore": 170
+    "highScore": 40
   }
 }
